@@ -38,6 +38,9 @@ Displays Yandex.Metrica Counter
 
 == Changelog ==
 
+= 0.6.8.1 =
+* Fix fatal error
+
 = 0.6.8 =
 * Fix preview issues
 * Fix widget output

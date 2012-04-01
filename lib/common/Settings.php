@@ -368,7 +368,9 @@ implements \ArrayAccess, \Iterator, \Countable {
         $key = array_shift($keys);
 
         if (!self::$___registry[$key]) {
-            self::$___registry[$key] = new self(\get_option($key), null, $key);
+            $option = \get_option($key);
+            if ($option === false) \add_option($key);
+            self::$___registry[$key] = new self($option, null, $key);
             \add_filter('pre_update_option_' . $key, array(self::$___registry[$key], '___pre_update'));
             \add_filter('pre_option_' . $key, array(self::$___registry[$key], '___pre'));
         }

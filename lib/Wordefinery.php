@@ -1,6 +1,6 @@
 <?php
 
-$wordefinery_version = '0.7.5.1';
+$wordefinery_version = '0.7.5.3';
 
 if ( !defined('WORDEFINERY') ) return $wordefinery_version;
 

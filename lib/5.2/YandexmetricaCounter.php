@@ -2,7 +2,7 @@
 
 final class Wordefinery_YandexmetricaCounter {
 
-    const VERSION = '0.6.8';
+    const VERSION = '0.6.8.1';
     const DB = false;
     private $path = '';
     private $_is_counter = 0;
